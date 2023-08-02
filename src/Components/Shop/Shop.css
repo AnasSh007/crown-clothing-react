@@ -1,0 +1,67 @@
+.shop-portion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.shop-portion-heading {
+  color: white;
+  font-size: 4rem;
+  margin-top: 50px;
+  letter-spacing: 30px;
+}
+
+.shop-portion-cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0px 50px 0px 50px;
+}
+
+.shop-portion-card-image {
+  height: 375px;
+  width: 100%;
+}
+
+.shop-portion-card-name-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  color: white;
+  padding: 0px 1px 0px 1px;
+}
+
+.add-to-cart-card {
+  height: 45px;
+  width: 80%;
+  opacity: 0.5;
+  background-color: silver;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  top: 0;
+  z-index: 1;
+  margin-top: -100px;
+  margin-left: 26px;
+  visibility: hidden;
+  transition: 0.2s all ease-in-out;
+  cursor: pointer;
+}
+
+.add-to-cart-card {
+  margin-bottom: 70px;
+}
+
+.add-to-cart-card:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.shop-portion-card:hover .add-to-cart-card {
+  visibility: visible;
+}

@@ -1,7 +1,10 @@
-export default function SmallCatCard(props) {
+import "./CategoryCard.css";
+import { Link } from "react-router-dom";
+export default function CategoryCard(props) {
   return (
+    // <Link to={`shop/${props.heading}`}>
     <div
-      className="container-small"
+      className={props.classname}
       style={{ backgroundImage: `url(${props.img})` }}
     >
       <div className="container-small-text-box">
@@ -11,5 +14,6 @@ export default function SmallCatCard(props) {
         <span style={{ fontSize: "1.2rem", fontWeight: "bold" }}>SHOP NOW</span>
       </div>
     </div>
+    // </Link>
   );
 }

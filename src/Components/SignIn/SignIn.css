@@ -1,0 +1,75 @@
+.signin-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  height: 84vh;
+  width: 30%;
+  /* border: 1px solid red; */
+}
+.form1 {
+  /* border: 1px solid white; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  height: 70vh;
+}
+
+.form-heading-1 {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.form-heading-2 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+input {
+  width: 98%;
+  height: 30px;
+  transition: 0.3s all ease-in-out;
+}
+
+input:hover label {
+  transform: translateY(-40px);
+  font-size: 20px;
+  color: red;
+}
+
+label {
+  /* transform: translateY(40px); */
+  /* margin-left: 10px; */
+  font-size: larger;
+  transition: 0.3s all ease-in-out;
+  color: white;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.form-button {
+  width: 45%;
+  border: none;
+  height: 50px;
+  color: white;
+  background-color: black;
+}
+
+.google-btn {
+  background-color: blue;
+}
